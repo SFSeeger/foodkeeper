@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "foodkeeper-backend"
+version = "0.1.0"
+description = ""
+authors = ["SFSeeger <simon.f.seeger@gmx.de>"]
+readme = "README.md"
+packages = [{include = "foodkeeper_backend"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.1.4"
+djangorestframework = "^3.14.0"
+django-filter = "^22.1"
+python-dotenv = "^0.21.0"
+mysqlclient = "^2.1.1"
+
+[tool.poetry.group.dev.dependencies]
+pylance = "^0.2.6"
+black = "^22.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
